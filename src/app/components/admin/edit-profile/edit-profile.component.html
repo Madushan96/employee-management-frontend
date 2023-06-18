@@ -1,0 +1,94 @@
+<div class="card card-body">
+    <form>
+        <h1>Edit Profile</h1>
+        
+        <hr>
+
+        <div class="row form-group my-3">
+            <div class="col">
+                <label for="fullName">Employee Full Name:</label>
+                <input type="text" id="fullName" class="form-control">
+            </div>
+        </div>
+
+        <div class="row form-group my-3">
+            <div class="col col-xs-8">
+                <label for="initials">Name With Initials:</label>
+                <input type="text" id="initials" class="form-control">
+            </div>
+        </div>
+
+        <div class="row form-group my-3">
+            <div class="col col-xs-4">
+                <label>Employee Number:</label>
+                <input type="text" class="form-control" disabled>
+            </div>
+
+            <div class="col col-xs-4">
+                <label for="team">Team:</label>
+                <select id="team" class="form-control">
+                    <option>Treat</option>
+                    <option>Treat PS</option>
+                    <option>S12</option>
+                    <option>TS</option>
+                </select> 
+            </div>
+
+            <div class="col col-xs-4">
+                <label for="designation">Designation:</label>
+                <select id="designation" class="form-control">
+                    <option>Associate Software Engineer</option>
+                    <option>Software Engineer</option>
+                    <option>Manger</option>
+                    <option>QA Engineer</option>
+                </select> 
+            </div>
+        </div>
+        
+        <div class="row form-group my-3">
+            <div class="col col-xs-8 my-auto">
+                <input type="file" class="form-control" (change)="displayImage($event)">    
+            </div>
+
+            <div class="col col-xs-4">
+                <img [src]="imageURL" class="rounded-circle" height="125px" width="125px">
+            </div>
+        </div>
+
+        <div class="row form-group my-3">
+            <div class="col col-xs-4">
+                <label for="maritalStatus">Marital Status:</label>
+                <select id="maritalStatus" class="form-control">
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                    <option>Separated</option>
+                </select>
+            </div>
+
+            <div class="col col-xs-4">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" class="form-control">
+            </div>
+
+            <div class="col col-xs-4">
+                <label>Age:</label>
+                <input type="text" class="form-control" disabled>
+            </div>
+        </div>
+
+        <div clas="row form-group my-3">
+            <div class="col">
+                <label for="address">Address:</label>
+                <textarea rows="4" id="address" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="row form-group mt-5 float-end">
+            <div class="col">
+                <button type="submit" class="btn btn-success mx-1">Add</button>
+                <button type="reset" class="btn btn-danger mx-1">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>

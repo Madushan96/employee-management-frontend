@@ -2,7 +2,7 @@
     <div class="container">
         <ul class="navbar-nav">
             <li *ngFor="let navItem of navItemList" class="nav-item">
-                <a href="#" class="nav-link d-flex mb-3">
+                <a href="#" [routerLink]="navItem.routerLink" class="nav-link d-flex mb-3">
                     <mat-icon>{{navItem.icon}}</mat-icon> 
                     <label class="mt-1 ps-2">{{navItem.title}}</label>
                 </a>
