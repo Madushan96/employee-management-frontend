@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-edit-employee',
-  templateUrl: './edit-profile.component.html',
-  styleUrls: ['./edit-profile.component.css']
+  selector: 'app-view-employee',
+  templateUrl: './view-employee.component.html',
+  styleUrls: ['./view-employee.component.css']
 })
-export class EditProfileComponent {
+export class ViewEmployeeComponent {
   imageURL;
 
   displayImage(event){
